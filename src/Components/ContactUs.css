@@ -1,0 +1,135 @@
+
+.contact-us {
+  background: linear-gradient(135deg, #f06d6d, #0056b3); /* Gradient background */
+  padding: 50px 20px;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-us .container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.contact-us .container:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us h1 {
+  text-align: center;
+  color: #0056b3; 
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.contact-us h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f06d6d; 
+  margin: 20px auto 0;
+}
+
+.contact-us .contact-info {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-us .contact-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.contact-us .contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us .contact-info li {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.contact-us .contact-info li strong {
+  color: #0056b3; 
+}
+
+.contact-us .contact-form .form-group {
+  margin-bottom: 1.8rem;
+}
+
+.contact-us .contact-form label {
+  font-size: 1.1rem;
+  color: #0056b3; 
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-us .contact-form input,
+.contact-us .contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-us .contact-form input:focus,
+.contact-us .contact-form textarea:focus {
+  border-color: #0056b3; 
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 64, 128, 0.2);
+}
+
+.contact-us .contact-form button {
+  background-color: #e63946; 
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-us .contact-form button:hover {
+  background-color: #d62839; 
+  transform: translateY(-2px); 
+}
+
+.contact-us .status {
+  font-size: 1.1rem;
+  color: #2e8b57; 
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .contact-us h1 {
+    font-size: 30px;
+  }
+
+  .contact-us .container {
+    padding: 30px;
+  }
+
+  .contact-us .contact-info p {
+    font-size: 16px;
+  }
+}
